@@ -4,6 +4,7 @@ import { Card } from '../Card/Card'
 import { cardsPair } from '../../constants/Cards'
 
 import "./MemoryGame.css"
+import { Result } from '../Result/Result'
 
 export const MemoryGame = () => {
   return (
@@ -17,6 +18,7 @@ export const MemoryGame = () => {
           ))}
         </div>
       </div>
+      <Result />
     </div>
   )
 }
