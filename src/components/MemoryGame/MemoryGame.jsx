@@ -1,12 +1,20 @@
 import { Score } from '../Score/Score'
 import { Card } from '../Card/Card'
-
 import { cardsPair } from '../../constants/Cards'
-
-import "./MemoryGame.css"
 import { Result } from '../Result/Result'
+import { LogicMemoryGameProvider } from '../../contexts/LogicMemoryGame'
+
+import './MemoryGame.css'
 
 export const MemoryGame = () => {
+  return(
+    <LogicMemoryGameProvider >
+      <MemoryGameContent />
+    </LogicMemoryGameProvider>
+  )
+}
+
+export const MemoryGameContent = () => {
   return (
     <div className="memory-game">
       <div className="memory-game__content">

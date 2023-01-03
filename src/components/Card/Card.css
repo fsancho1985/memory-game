@@ -44,6 +44,6 @@
   transform: rotateY(180deg);
 }
 
-.card:hover .card__content {
+.turned--card .card__content {
   transform: rotateY(180deg);
 }

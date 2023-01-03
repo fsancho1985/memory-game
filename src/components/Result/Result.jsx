@@ -1,6 +1,14 @@
+import classNames from 'classnames'
+import './Result.css'
+
 export const Result = () => {
+
+  const cn = classNames("result", {
+    "result--open": false
+  })
+
   return (
-    <div className="result">
+    <div className={cn}>
       <div className="result__box">
         <p>Seu nível de cosmo é:</p>
         <h1>Prata</h1>

@@ -1,0 +1,28 @@
+.result {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.result__box {
+  padding: 1rem 2rem;
+  background-color: #333;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.result--open {
+  opacity: 1;
+  visibility: visible;
+}
